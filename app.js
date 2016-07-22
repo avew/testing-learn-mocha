@@ -9,6 +9,12 @@ app.get('/hello', function (req, res) {
   })
 })
 
+app.get('/world',function (req,res) {
+  res.json({
+    message:'world'
+  })
+});
+
 
 app.listen(4000, function (err) {
   if (err) {

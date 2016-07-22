@@ -19,4 +19,19 @@ describe('Test REST API', function(){
       })
 	})
   })
+  describe('GET /world',function () {
+    it('return json dengan key "message" and value"world" ',function(done) {
+      request(app).get('/world')
+        .set('Accept','application/json')
+          .expect('Content-Type',/json/)
+          .expect(200)
+          .expect(function(res) {
+            assert.equal(res.body.message, 'world')
+          })
+          .end(function(err,res) {
+            if(err) return done(err)
+            done()
+          })
+    })
+  })
 })
