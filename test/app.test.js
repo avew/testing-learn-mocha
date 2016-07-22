@@ -4,6 +4,7 @@ var assert = require('assert')
 var app = require('../app')
 
 describe('Test REST API', function(){
+
   describe('GET /hello', function(){
 	it('should return json with key "message" and value "hello"', function(done){
 	  request(app).get('/hello')
@@ -19,8 +20,9 @@ describe('Test REST API', function(){
       })
 	})
   })
+
   describe('GET /world',function () {
-    it('return json dengan key "message" and value"world" ',function(done) {
+    it('return json dengan key "message" and value "world" ',function(done) {
       request(app).get('/world')
         .set('Accept','application/json')
           .expect('Content-Type',/json/)
