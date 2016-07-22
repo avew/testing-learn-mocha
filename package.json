@@ -1,0 +1,23 @@
+{
+  "name": "testing-learn",
+  "version": "1.0.0",
+  "description": "Testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "testing",
+    "mocha"
+  ],
+  "author": "Asep Rojali",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
+  }
+}
